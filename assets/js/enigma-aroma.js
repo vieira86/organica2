@@ -85,6 +85,10 @@ function renderAromaGate(){
         <label for="enig-input-turma">Turma</label>
         <input type="text" id="enig-input-turma" placeholder="Ex.: 3º Técnico em Química" autocomplete="off">
       </div>
+      <div class="enig-ava" style="margin:4px 0 18px;">
+        <strong class="ava-title">⚠️ ATENÇÃO: PARA SER COMPUTADO</strong>
+        <p>Todas as estruturas precisarão ser desenhadas no caderno, <strong>MOSTRANDO A CONTAGEM DE HIDROGÊNIOS</strong>.</p>
+      </div>
       <p class="hint-small" id="enig-gate-error" style="color: var(--danger); display:none;">Preencha os dois campos para continuar.</p>
       <button class="btn btn-primary" id="enig-btn-start" style="width:100%; justify-content:center;">Aceitar a missão →</button>
     </div>
@@ -373,6 +377,10 @@ function renderAromaFinal(){
         <strong>O Olimpo te saúda, ${aromaState.name.split(" ")[0]}!</strong><br>
         <span class="enig-sub">Tempo: ${minutos} min · erros no caminho: ${totalErros}</span>
         <span class="enig-registered" id="enig-reg-status">📝 Registrando na planilha…</span>
+      </div>
+      <div class="enig-ava">
+        <strong class="ava-title">⚠️ ATENÇÃO: PARA SER COMPUTADO</strong>
+        <p>Todas as estruturas precisarão ser desenhadas no caderno, <strong>MOSTRANDO A CONTAGEM DE HIDROGÊNIOS</strong>.</p>
       </div>
     </div>`;
   box.scrollIntoView({ behavior: "smooth", block: "start" });
